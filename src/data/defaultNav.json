@@ -1,0 +1,1340 @@
+[
+  {
+    "id": "menu1",
+    "name": "站点首页",
+    "type": "local-page",
+    "url": "gx.html",
+    "target": "main",
+    "order": 1
+  },
+  {
+    "id": "menu2",
+    "name": "路径报文",
+    "type": "category",
+    "order": 2,
+    "children": [
+      {
+        "id": "menu2-1",
+        "name": "NMC路径预报①",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/probability-img1.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 1
+      },
+      {
+        "id": "menu2-2",
+        "name": "NMC路径预报②",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/probability-img2.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 2
+      },
+      {
+        "id": "menu2-3",
+        "name": "NMC路径预报③",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/probability-img3.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 3
+      },
+      {
+        "id": "menu2-4",
+        "name": "NMC台风公报",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/warning.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 4
+      },
+      {
+        "id": "menu2-5",
+        "name": "NMC台风快讯",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/typhoon_new.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 5
+      },
+      {
+        "id": "menu2-6",
+        "name": "NMC台风预警",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/warning_index.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 6
+      },
+      {
+        "id": "menu2-7",
+        "name": "NMC台风命名",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/typhoon-name/index.html",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 7
+      },
+      {
+        "id": "menu2-8",
+        "name": "NMC全球热带气旋监测",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/typhoon/totalcyclone.htm",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 8
+      },
+      {
+        "id": "menu2-9",
+        "name": "未来扰动监测网站",
+        "type": "link",
+        "url": "https://www.ospo.noaa.gov/products/ocean/tropical/tcfp/",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 9
+      },
+      {
+        "id": "menu2-10",
+        "name": "未来扰动监测",
+        "type": "local-page",
+        "url": "./ljbw/raodong.html",
+        "target": "main",
+        "parentId": "menu2",
+        "order": 10
+      },
+      {
+        "id": "menu2-11",
+        "name": "中央气象台台风网",
+        "type": "link",
+        "url": "http://typhoon.nmc.cn/",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 11
+      },
+      {
+        "id": "menu2-12",
+        "name": "台风2000网",
+        "type": "link",
+        "url": "http://www.typhoon2000.ph/multi/",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 12
+      },
+      {
+        "id": "menu2-13",
+        "name": "温州台风网",
+        "type": "link",
+        "url": "http://www.wztf121.com/",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 13
+      },
+      {
+        "id": "menu2-14",
+        "name": "浙江水利",
+        "type": "link",
+        "url": "https://typhoon.slt.zj.gov.cn/",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 14
+      },
+      {
+        "id": "menu2-15",
+        "name": "JMA台风情报",
+        "type": "link",
+        "url": "https://www.jma.go.jp/bosai/map.html#contents=typhoon&elem=typhoon_all",
+        "target": "_blank",
+        "parentId": "menu2",
+        "order": 15
+      }
+    ]
+  },
+  {
+    "id": "menu3",
+    "name": "卫星云图",
+    "type": "category",
+    "order": 3,
+    "children": [
+      {
+        "id": "menu3-1",
+        "name": "CIMSS卫星云图",
+        "type": "local-page",
+        "url": "./wxyt/yt.html",
+        "target": "main",
+        "parentId": "menu3",
+        "order": 1
+      },
+      {
+        "id": "menu3-2",
+        "name": "数字台风网云图",
+        "type": "local-page",
+        "url": "./wxyt/shuzi.html",
+        "target": "main",
+        "parentId": "menu3",
+        "order": 2
+      },
+      {
+        "id": "menu3-3",
+        "name": "NMC卫星云图",
+        "type": "local-page",
+        "url": "./wxyt/nmc.html",
+        "target": "main",
+        "parentId": "menu3",
+        "order": 3
+      },
+      {
+        "id": "menu3-4",
+        "name": "NOAA卫星云图",
+        "type": "link",
+        "url": "https://www.ospo.noaa.gov/products/imagery/himawari.html",
+        "target": "main",
+        "parentId": "menu3",
+        "order": 4
+      },
+      {
+        "id": "menu3-5",
+        "name": "Himawari",
+        "type": "local-page",
+        "url": "./wxyt/himawari.html",
+        "target": "main",
+        "parentId": "menu3",
+        "order": 5
+      },
+      {
+        "id": "menu3-6",
+        "name": "Dapiya",
+        "type": "link",
+        "url": "http://www.dapiya.net:1234/zh/satellite/floater/",
+        "target": "_blank",
+        "parentId": "menu3",
+        "order": 6
+      },
+      {
+        "id": "menu3-7",
+        "name": "RealEarth(TM)",
+        "type": "link",
+        "url": "http://re.ssec.wisc.edu/",
+        "target": "_blank",
+        "parentId": "menu3",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "id": "menu4",
+    "name": "数值预报",
+    "type": "category",
+    "order": 4,
+    "children": [
+      {
+        "id": "menu4-1",
+        "name": "EC集合",
+        "type": "link",
+        "url": "https://www.ecmwf.int/en/forecasts/charts",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 1
+      },
+      {
+        "id": "menu4-2",
+        "name": "EC集合(带登陆预测）",
+        "type": "link",
+        "url": "https://next.easterlywave.com/",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 2
+      },
+      {
+        "id": "menu4-3",
+        "name": "GFS模式",
+        "type": "link",
+        "url": "http://moe.met.fsu.edu/cyclonephase/gfs/fcst/",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 3
+      },
+      {
+        "id": "menu4-4",
+        "name": "HWRF模式",
+        "type": "link",
+        "url": "http://www.emc.ncep.noaa.gov/gc_wmb/vxt/HWRF/index.php",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 4
+      },
+      {
+        "id": "menu4-5",
+        "name": "NCEP气旋路径",
+        "type": "link",
+        "url": "http://www.emc.ncep.noaa.gov/gmb/tpm/emchurr/tcgen/",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 5
+      },
+      {
+        "id": "menu4-6",
+        "name": "Tropical Tidbits",
+        "type": "link",
+        "url": "https://www.tropicaltidbits.com/analysis/models/",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 6
+      },
+      {
+        "id": "menu4-7",
+        "name": "Weathernerds",
+        "type": "link",
+        "url": "https://www.weathernerds.org/",
+        "target": "_blank",
+        "parentId": "menu4",
+        "order": 7
+      }
+    ]
+  },
+  {
+    "id": "menu5",
+    "name": "海洋资讯",
+    "type": "category",
+    "order": 5,
+    "children": [
+      {
+        "id": "menu5-1",
+        "name": "海洋相关",
+        "type": "local-page",
+        "url": "./haiyang/hyxg.html",
+        "target": "main",
+        "parentId": "menu5",
+        "order": 1
+      },
+      {
+        "id": "menu5-2",
+        "name": "西太风场扫描",
+        "type": "link",
+        "url": "http://tropic.ssec.wisc.edu/real-time/windmain.php?basin=westpac&prod=wvir&sat=wgms&time&zoom=",
+        "target": "_blank",
+        "parentId": "menu5",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "menu6",
+    "name": "天气图分析",
+    "type": "category",
+    "order": 6,
+    "children": [
+      {
+        "id": "menu6-1",
+        "name": "CMA天气图",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/observations/china/dm/weatherchart-h000.htm",
+        "target": "_blank",
+        "parentId": "menu6",
+        "order": 1
+      },
+      {
+        "id": "menu6-2",
+        "name": "JMA天气图",
+        "type": "link",
+        "url": "http://www.jma.go.jp/jp/g3/",
+        "target": "_blank",
+        "parentId": "menu6",
+        "order": 2
+      },
+      {
+        "id": "menu6-3",
+        "name": "全球探空资料查询",
+        "type": "link",
+        "url": "http://weather.uwyo.edu/upperair/seasia.html",
+        "target": "_blank",
+        "parentId": "menu6",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "menu7",
+    "name": "CIMSS分析",
+    "type": "category",
+    "order": 7,
+    "children": [
+      {
+        "id": "menu7-1",
+        "name": "西北太平洋",
+        "type": "local-page",
+        "url": "./fenxi/xbtpy.html",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 1
+      },
+      {
+        "id": "menu7-2",
+        "name": "东北太平洋",
+        "type": "local-page",
+        "url": "./fenxi/dbtpy.html",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 2
+      },
+      {
+        "id": "menu7-3",
+        "name": "西北大西洋",
+        "type": "local-page",
+        "url": "./fenxi/xbdxy.html",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 3
+      },
+      {
+        "id": "menu7-4",
+        "name": "东大西洋",
+        "type": "local-page",
+        "url": "./fenxi/ddxy.html",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 4
+      },
+      {
+        "id": "menu7-5",
+        "name": "印度洋",
+        "type": "local-page",
+        "url": "./fenxi/ydy.html",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 5
+      },
+      {
+        "id": "menu7-6",
+        "name": "MIMIC",
+        "type": "link",
+        "url": "http://tropic.ssec.wisc.edu/real-time/mimtc/tc.shtml",
+        "target": "main",
+        "parentId": "menu7",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "id": "menu8",
+    "name": "CIMSS驶流",
+    "type": "category",
+    "order": 8,
+    "children": [
+      {
+        "id": "menu8-1",
+        "name": "西北太平洋",
+        "type": "local-page",
+        "url": "./shiliu/xbtpy.html",
+        "target": "main",
+        "parentId": "menu8",
+        "order": 1
+      },
+      {
+        "id": "menu8-2",
+        "name": "东北太平洋",
+        "type": "local-page",
+        "url": "./shiliu/dbtpy.html",
+        "target": "main",
+        "parentId": "menu8",
+        "order": 2
+      },
+      {
+        "id": "menu8-3",
+        "name": "西北大西洋",
+        "type": "local-page",
+        "url": "./shiliu/xbdxy.html",
+        "target": "main",
+        "parentId": "menu8",
+        "order": 3
+      },
+      {
+        "id": "menu8-4",
+        "name": "东大西洋",
+        "type": "local-page",
+        "url": "./shiliu/ddxy.html",
+        "target": "main",
+        "parentId": "menu8",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "menu9",
+    "name": "雷达专区",
+    "type": "category",
+    "order": 9,
+    "children": [
+      {
+        "id": "menu9-1",
+        "name": "CMA雷达饼图",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/radar/chinaall.html",
+        "target": "_blank",
+        "parentId": "menu9",
+        "order": 1
+      },
+      {
+        "id": "menu9-2",
+        "name": "CMA单站雷达",
+        "type": "link",
+        "url": "http://www.nmc.cn/publish/radar/shang-hai/qing-pu.htm",
+        "target": "_blank",
+        "parentId": "menu9",
+        "order": 2
+      },
+      {
+        "id": "menu9-3",
+        "name": "彩云天气",
+        "type": "link",
+        "url": "https://caiyunapp.com/map/",
+        "target": "_blank",
+        "parentId": "menu9",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "menu10",
+    "name": "气旋监测",
+    "type": "category",
+    "order": 10,
+    "children": [
+      {
+        "id": "menu10-1",
+        "name": "ADT(8.2.1)",
+        "type": "link",
+        "url": "http://tropic.ssec.wisc.edu/real-time/adt/adt.html",
+        "target": "_blank",
+        "parentId": "menu10",
+        "order": 1
+      },
+      {
+        "id": "menu10-2",
+        "name": "MJO预报",
+        "type": "link",
+        "url": "http://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/CLIVAR/clivar_wh.shtml",
+        "target": "_blank",
+        "parentId": "menu10",
+        "order": 2
+      },
+      {
+        "id": "menu10-3",
+        "name": "NOAA-ADT",
+        "type": "link",
+        "url": "http://www.ssd.noaa.gov/PS/TROP/adt.html",
+        "target": "_blank",
+        "parentId": "menu10",
+        "order": 3
+      },
+      {
+        "id": "menu10-4",
+        "name": "NOAA台风特写",
+        "type": "link",
+        "url": "http://www.ssd.noaa.gov/PS/TROP/floaters.html",
+        "target": "_blank",
+        "parentId": "menu10",
+        "order": 4
+      },
+      {
+        "id": "menu10-5",
+        "name": "NRL",
+        "type": "link",
+        "url": "https://www.nrlmry.navy.mil/tcweb/active/",
+        "target": "_blank",
+        "parentId": "menu10",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "menu11",
+    "name": "海洋流场",
+    "type": "category",
+    "order": 11,
+    "children": [
+      {
+        "id": "menu11-1",
+        "name": "Air",
+        "type": "local-page",
+        "url": "./hylc/air.html",
+        "target": "main",
+        "parentId": "menu11",
+        "order": 1
+      },
+      {
+        "id": "menu11-2",
+        "name": "Ocan",
+        "type": "local-page",
+        "url": "./hylc/ocean.html",
+        "target": "main",
+        "parentId": "menu11",
+        "order": 2
+      },
+      {
+        "id": "menu11-3",
+        "name": "OceanViewer",
+        "type": "link",
+        "url": "https://cwcgom.aoml.noaa.gov/cgom/OceanViewer/",
+        "target": "_blank",
+        "parentId": "menu11",
+        "order": 3
+      },
+      {
+        "id": "menu11-4",
+        "name": "WeatherView",
+        "type": "link",
+        "url": "https://www.nnvl.noaa.gov/weatherview/index.html",
+        "target": "_blank",
+        "parentId": "menu11",
+        "order": 4
+      },
+      {
+        "id": "menu11-5",
+        "name": "Windyty",
+        "type": "link",
+        "url": "https://www.windyty.com",
+        "target": "_blank",
+        "parentId": "menu11",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "menu12",
+    "name": "温带气旋",
+    "type": "category",
+    "order": 12,
+    "children": [
+      {
+        "id": "menu12-1",
+        "name": "BOM",
+        "type": "link",
+        "url": "http://www.bom.gov.au/australia/charts/",
+        "target": "_blank",
+        "parentId": "menu12",
+        "order": 1
+      },
+      {
+        "id": "menu12-2",
+        "name": "Metservice",
+        "type": "link",
+        "url": "http://www.metservice.com/maps-radar/maps/tasman-sea-nz",
+        "target": "_blank",
+        "parentId": "menu12",
+        "order": 2
+      }
+    ]
+  },
+  {
+    "id": "menu13",
+    "name": "气象平台",
+    "type": "category",
+    "order": 13,
+    "children": [
+      {
+        "id": "menu13-1",
+        "name": "ECMWF-Charts",
+        "type": "link",
+        "url": "https://charts.ecmwf.int/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 1
+      },
+      {
+        "id": "menu13-2",
+        "name": "WeahterOnline",
+        "type": "link",
+        "url": "https://www.weatheronline.co.uk/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 2
+      },
+      {
+        "id": "menu13-3",
+        "name": "WetterOnline",
+        "type": "link",
+        "url": "https://www.wetteronline.de/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 3
+      },
+      {
+        "id": "menu13-4",
+        "name": "地下天气网",
+        "type": "link",
+        "url": "http://www.wunderground.com/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 4
+      },
+      {
+        "id": "menu13-5",
+        "name": "Wyoming",
+        "type": "link",
+        "url": "http://weather.uwyo.edu/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 5
+      },
+      {
+        "id": "menu13-6",
+        "name": "船舶实测平台",
+        "type": "link",
+        "url": "http://www.ndbc.noaa.gov/ship_obs.php?uom=M;time=7",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 6
+      },
+      {
+        "id": "menu13-7",
+        "name": "Meteologix",
+        "type": "link",
+        "url": "https://meteologix.com/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 7
+      },
+      {
+        "id": "menu13-8",
+        "name": "Weather-Model",
+        "type": "link",
+        "url": "https://www.weather-models.info/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 8
+      },
+      {
+        "id": "menu13-9",
+        "name": "CIRA-RAMMB",
+        "type": "link",
+        "url": "https://rammb-data.cira.colostate.edu/tc_realtime/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 9
+      },
+      {
+        "id": "menu13-10",
+        "name": "Easterlywave",
+        "type": "link",
+        "url": "https://www.easterlywave.com/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 10
+      },
+      {
+        "id": "menu13-11",
+        "name": "JMA",
+        "type": "link",
+        "url": "https://www.jma.go.jp/bosai/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 11
+      },
+      {
+        "id": "menu13-12",
+        "name": "JTWC",
+        "type": "link",
+        "url": "https://www.metoc.navy.mil/jtwc/jtwc.html?tropical",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 12
+      },
+      {
+        "id": "menu13-13",
+        "name": "TCFA",
+        "type": "link",
+        "url": "https://www.tcfa.top/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 13
+      },
+      {
+        "id": "menu13-14",
+        "name": "相风气象(风乌)",
+        "type": "link",
+        "url": "https://fengwuai.com/",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 14
+      },
+      {
+        "id": "menu13-15",
+        "name": "智台智能体",
+        "type": "link",
+        "url": "http://smartyphoon.ap-tcrc.org",
+        "target": "_blank",
+        "parentId": "menu13",
+        "order": 15
+      }
+    ]
+  },
+  {
+    "id": "menu14",
+    "name": "WMO",
+    "type": "category",
+    "order": 14,
+    "children": [
+      {
+        "id": "menu14-1",
+        "name": "WMC-WWIS",
+        "type": "link",
+        "url": "https://worldweather.wmo.int/en/home.html",
+        "target": "_blank",
+        "parentId": "menu14",
+        "order": 1
+      },
+      {
+        "id": "menu14-2",
+        "name": "WMC-BJ",
+        "type": "link",
+        "url": "http://www.wmc-bj.net/",
+        "target": "_blank",
+        "parentId": "menu14",
+        "order": 2
+      },
+      {
+        "id": "menu14-3",
+        "name": "WMO-AEMET",
+        "type": "link",
+        "url": "https://dust.aemet.es/",
+        "target": "_blank",
+        "parentId": "menu14",
+        "order": 3
+      },
+      {
+        "id": "menu14-4",
+        "name": "SDS-WAS",
+        "type": "link",
+        "url": "https://sds-was.cimh.edu.bb/",
+        "target": "_blank",
+        "parentId": "menu14",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "menu15",
+    "name": "中央气象台",
+    "type": "category",
+    "order": 15,
+    "children": [
+      {
+        "id": "menu15-1",
+        "name": "中央气象台",
+        "type": "link",
+        "url": "http://www.nmc.cn/",
+        "target": "_blank",
+        "parentId": "menu15",
+        "order": 1
+      },
+      {
+        "id": "menu15-2",
+        "name": "中央气象台航空预报",
+        "type": "link",
+        "url": "http://avimet.nmc.cn/",
+        "target": "_blank",
+        "parentId": "menu15",
+        "order": 2
+      },
+      {
+        "id": "menu15-3",
+        "name": "中央气象台沙尘预报",
+        "type": "link",
+        "url": "http://www.asdf-bj.net/",
+        "target": "_blank",
+        "parentId": "menu15",
+        "order": 3
+      },
+      {
+        "id": "menu15-4",
+        "name": "中央气象台人工智能预报大模型平台",
+        "type": "link",
+        "url": "http://aimfdp.nmc.cn/",
+        "target": "_blank",
+        "parentId": "menu15",
+        "order": 4
+      }
+    ]
+  },
+  {
+    "id": "menu16",
+    "name": "上海气象",
+    "type": "category",
+    "order": 16,
+    "children": [
+      {
+        "id": "menu16-1",
+        "name": "上海气象局",
+        "type": "link",
+        "url": "http://sh.cma.gov.cn/",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 1
+      },
+      {
+        "id": "menu16-2",
+        "name": "上海天气",
+        "type": "link",
+        "url": "http://sh.weather.com.cn/",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 2
+      },
+      {
+        "id": "menu16-3",
+        "name": "上海天气预警",
+        "type": "link",
+        "url": "http://sh.weather.com.cn/zhyj/index.shtml",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 3
+      },
+      {
+        "id": "menu16-4",
+        "name": "上海天气预报",
+        "type": "link",
+        "url": "http://sh.weather.com.cn/forecast.shtml",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 4
+      },
+      {
+        "id": "menu16-5",
+        "name": "上海天气平台(公众号版)",
+        "type": "link",
+        "url": "http://wx.soweather.com/wxapp/qxsk.jsp",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 5
+      },
+      {
+        "id": "menu16-6",
+        "name": "上海天气预警(公众号版)",
+        "type": "link",
+        "url": "http://wx.soweather.com/wxapp/warn.jsp",
+        "target": "_blank",
+        "parentId": "menu16",
+        "order": 6
+      }
+    ]
+  },
+  {
+    "id": "menu17",
+    "name": "港澳台气象",
+    "type": "category",
+    "order": 17,
+    "children": [
+      {
+        "id": "menu17-1",
+        "name": "香港天文台",
+        "type": "link",
+        "url": "https://www.hko.gov.hk/sc/index.html",
+        "target": "_blank",
+        "parentId": "menu17",
+        "order": 1
+      },
+      {
+        "id": "menu17-2",
+        "name": "澳门地球物理气象局",
+        "type": "link",
+        "url": "https://www.smg.gov.mo/zh",
+        "target": "_blank",
+        "parentId": "menu17",
+        "order": 2
+      },
+      {
+        "id": "menu17-3",
+        "name": "交通部中央气象局",
+        "type": "link",
+        "url": "https://www.cwa.gov.tw/V8/C/",
+        "target": "_blank",
+        "parentId": "menu17",
+        "order": 3
+      }
+    ]
+  },
+  {
+    "id": "menu18",
+    "name": "美国气象",
+    "type": "category",
+    "order": 18,
+    "children": [
+      {
+        "id": "menu18-1",
+        "name": "NOAA",
+        "type": "link",
+        "url": "https://www.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 1
+      },
+      {
+        "id": "menu18-2",
+        "name": "NWS",
+        "type": "link",
+        "url": "https://www.weather.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 2
+      },
+      {
+        "id": "menu18-3",
+        "name": "PRH",
+        "type": "link",
+        "url": "https://www.weather.gov/prh/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 3
+      },
+      {
+        "id": "menu18-4",
+        "name": "EMC",
+        "type": "link",
+        "url": "https://www.emc.ncep.noaa.gov/emc.php",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 4
+      },
+      {
+        "id": "menu18-5",
+        "name": "NOS",
+        "type": "link",
+        "url": "https://oceanservice.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 5
+      },
+      {
+        "id": "menu18-6",
+        "name": "NESDIS",
+        "type": "link",
+        "url": "https://www.nesdis.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 6
+      },
+      {
+        "id": "menu18-7",
+        "name": "NMFS",
+        "type": "link",
+        "url": "https://www.nmfs.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 7
+      },
+      {
+        "id": "menu18-8",
+        "name": "OAR",
+        "type": "link",
+        "url": "https://www.oar.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 8
+      },
+      {
+        "id": "menu18-9",
+        "name": "NCDC",
+        "type": "link",
+        "url": "https://www.ncdc.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 9
+      },
+      {
+        "id": "menu18-10",
+        "name": "ESRL",
+        "type": "link",
+        "url": "https://www.esrl.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 10
+      },
+      {
+        "id": "menu18-11",
+        "name": "SSD",
+        "type": "link",
+        "url": "https://www.ssd.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 11
+      },
+      {
+        "id": "menu18-12",
+        "name": "OSPO",
+        "type": "link",
+        "url": "https://www.ospo.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 12
+      },
+      {
+        "id": "menu18-13",
+        "name": "NHC",
+        "type": "link",
+        "url": "https://www.nhc.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 13
+      },
+      {
+        "id": "menu18-14",
+        "name": "OMAO",
+        "type": "link",
+        "url": "https://www.omao.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 14
+      },
+      {
+        "id": "menu18-15",
+        "name": "SOS",
+        "type": "link",
+        "url": "https://sos.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 15
+      },
+      {
+        "id": "menu18-16",
+        "name": "OE",
+        "type": "link",
+        "url": "https://oceanexplorer.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 16
+      },
+      {
+        "id": "menu18-17",
+        "name": "PMEL",
+        "type": "link",
+        "url": "https://www.pmel.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 17
+      },
+      {
+        "id": "menu18-18",
+        "name": "NMS",
+        "type": "link",
+        "url": "https://sanctuaries.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 18
+      },
+      {
+        "id": "menu18-19",
+        "name": "NGDC",
+        "type": "link",
+        "url": "https://www.ngdc.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 19
+      },
+      {
+        "id": "menu18-20",
+        "name": "AOML",
+        "type": "link",
+        "url": "https://www.aoml.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 20
+      },
+      {
+        "id": "menu18-21",
+        "name": "UCAR",
+        "type": "link",
+        "url": "https://www2.ucar.edu/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 21
+      },
+      {
+        "id": "menu18-22",
+        "name": "NCEI",
+        "type": "link",
+        "url": "https://www.ncei.noaa.gov/",
+        "target": "_blank",
+        "parentId": "menu18",
+        "order": 22
+      }
+    ]
+  },
+  {
+    "id": "menu19",
+    "name": "世界气象",
+    "type": "category",
+    "order": 19,
+    "children": [
+      {
+        "id": "menu19-1",
+        "name": "ECMWF",
+        "type": "link",
+        "url": "https://www.ecmwf.int/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 1
+      },
+      {
+        "id": "menu19-2",
+        "name": "JMA",
+        "type": "link",
+        "url": "https://www.jma.go.jp/jma/index.html",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 2
+      },
+      {
+        "id": "menu19-3",
+        "name": "KMA",
+        "type": "link",
+        "url": "http://www.kma.go.kr/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 3
+      },
+      {
+        "id": "menu19-4",
+        "name": "PAGASA",
+        "type": "link",
+        "url": "https://www.pagasa.dost.gov.ph/index.php",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 4
+      },
+      {
+        "id": "menu19-5",
+        "name": "Australia BOM",
+        "type": "link",
+        "url": "http://www.bom.gov.au/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 5
+      },
+      {
+        "id": "menu19-6",
+        "name": "Canada",
+        "type": "link",
+        "url": "https://weather.gc.ca/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 6
+      },
+      {
+        "id": "menu19-7",
+        "name": "Met Office",
+        "type": "link",
+        "url": "https://www.metoffice.gov.uk/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 7
+      },
+      {
+        "id": "menu19-8",
+        "name": "DWD",
+        "type": "link",
+        "url": "https://www.dwd.de/DE/Home/home_node.html",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 8
+      },
+      {
+        "id": "menu19-9",
+        "name": "MeteoFrance",
+        "type": "link",
+        "url": "https://meteofrance.com/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 9
+      },
+      {
+        "id": "menu19-10",
+        "name": "Singapore",
+        "type": "link",
+        "url": "https://www.weather.gov.sg/home/",
+        "target": "_blank",
+        "parentId": "menu19",
+        "order": 10
+      }
+    ]
+  },
+  {
+    "id": "menu20",
+    "name": "台风年鉴",
+    "type": "category",
+    "order": 20,
+    "children": [
+      {
+        "id": "menu20-1",
+        "name": "IBTrACS",
+        "type": "link",
+        "url": "https://www.ncei.noaa.gov/products/international-best-track-archive",
+        "target": "_blank",
+        "parentId": "menu20",
+        "order": 1
+      },
+      {
+        "id": "menu20-2",
+        "name": "JTWC BST",
+        "type": "link",
+        "url": "https://www.metoc.navy.mil/jtwc/jtwc.html?best-tracks",
+        "target": "_blank",
+        "parentId": "menu20",
+        "order": 2
+      },
+      {
+        "id": "menu20-3",
+        "name": "JTWC年鉴",
+        "type": "link",
+        "url": "https://www.metoc.navy.mil/jtwc/jtwc.html?cyclone",
+        "target": "_blank",
+        "parentId": "menu20",
+        "order": 3
+      },
+      {
+        "id": "menu20-4",
+        "name": "JMA年鉴",
+        "type": "link",
+        "url": "https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/annualreport.html",
+        "target": "_blank",
+        "parentId": "menu20",
+        "order": 4
+      },
+      {
+        "id": "menu20-5",
+        "name": "PAGASA年鉴",
+        "type": "link",
+        "url": "https://www.pagasa.dost.gov.ph/tropical-cyclone/publications/annual-report",
+        "target": "_blank",
+        "parentId": "menu20",
+        "order": 5
+      }
+    ]
+  },
+  {
+    "id": "menu21",
+    "name": "版本切换",
+    "type": "category",
+    "order": 21,
+    "children": [
+      {
+        "id": "menu21-1",
+        "name": "手机版",
+        "type": "link",
+        "url": "./wap.html",
+        "target": "_self",
+        "parentId": "menu21",
+        "order": 1
+      },
+      {
+        "id": "menu21-2",
+        "name": "电脑版",
+        "type": "link",
+        "url": "./pc.html",
+        "target": "_self",
+        "parentId": "menu21",
+        "order": 2
+      }
+    ]
+  }
+]

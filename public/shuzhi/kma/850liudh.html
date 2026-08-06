@@ -1,0 +1,44 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+
+<script Language="JavaScript1.1">
+var slidespeed=1000
+var slideimages=new Array(
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s000.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s006.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s012.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s018.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s024.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s030.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s036.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s042.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s048.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s054.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s060.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s066.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s072.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s078.png",
+"http://www.kma.go.kr/cht/ra2d/ra2d_asia1_wnd850_ft06_pa4_s084.png")
+var imageholder=new Array()
+var ie55=window.createPopup
+for (i=0;i<slideimages .length;i++){ imageholder[i]=new Image()
+imageholder[i].src=slideimages[i] } function gotoshow(){
+window.location=slidelinks[whichlink] }
+</script>
+<img src="" name="slide" style="filter:progid:DXImageTransform.Microsoft.Pixelate(MaxSquare=15,Duration=1)" align="middle" border="0">
+<script language="JavaScript1.1">
+var whichlink=0 
+var whichimage=0 
+var pixeldelay=(ie55)? document.images.slide.filters[0].duration*1000 : 0 
+function slideit(){ if (!document.images) return 
+if (ie55) document.images.slide.filters[0].apply() 
+document.images.slide.src=imageholder[whichimage].src 
+if (ie55) document.images.slide.filters[0].play() 
+whichlink=whichimage 
+whichimage=(whichimage<slideimages .length-1)? whichimage+1 : 0 
+setTimeout("slideit()",slidespeed+pixeldelay) } 
+slideit()
+</script>
+</a>
+<br>

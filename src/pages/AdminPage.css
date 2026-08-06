@@ -1,0 +1,418 @@
+/**
+ * 导航管理页面样式
+ */
+
+.admin-page {
+  height: 100vh;
+  background-color: #cce8cf;
+  padding: 24px 16px;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.admin-container {
+  max-width: 1200px;
+  height: 100%;
+  margin: 0 auto;
+  background: #ffffff;
+  border-radius: 12px;
+  padding: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  box-sizing: border-box;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.admin-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 16px;
+}
+
+.admin-header h1 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #333333;
+  margin: 0;
+}
+
+.admin-header-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.admin-message {
+  background: #e8f5e9;
+  color: #2e7d32;
+  padding: 10px 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+}
+
+.admin-loading {
+  padding: 40px 16px;
+  text-align: center;
+  color: #888888;
+  font-size: 14px;
+}
+
+.admin-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.category-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  background: #fafafa;
+  overflow: hidden;
+}
+
+.category-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 14px 16px;
+  background: #f1f8f1;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.category-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333333;
+}
+
+.category-name {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.category-arrow {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  font-size: 10px;
+  color: #666666;
+  transition: transform 0.2s ease;
+}
+
+.category-arrow.expanded {
+  transform: rotate(90deg);
+}
+
+.category-count {
+  font-size: 13px;
+  color: #888888;
+  font-weight: 400;
+}
+
+.category-actions {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.category-body {
+  padding: 12px 16px;
+}
+
+.children-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.no-children {
+  color: #888888;
+  font-size: 14px;
+  margin: 0;
+  padding: 8px 0;
+}
+
+.child-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 10px 12px;
+  border: 1px solid #eeeeee;
+  border-radius: 8px;
+  background: #ffffff;
+}
+
+.child-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.child-name {
+  font-weight: 500;
+  color: #333333;
+}
+
+.child-type {
+  font-size: 12px;
+  color: #666666;
+  background: #f0f0f0;
+  padding: 2px 8px;
+  border-radius: 4px;
+}
+
+.child-url {
+  font-size: 12px;
+  color: #666666;
+  max-width: 260px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.child-target {
+  font-size: 12px;
+  color: #666666;
+}
+
+.child-actions {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.admin-footer {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  border-top: 1px solid #eeeeee;
+  background: #ffffff;
+}
+
+/* 通用按钮样式 */
+.admin-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  font-size: 14px;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.2s, box-shadow 0.2s;
+  white-space: nowrap;
+}
+
+.admin-btn:hover {
+  opacity: 0.92;
+}
+
+.admin-btn:active {
+  transform: translateY(1px);
+}
+
+/* 编辑按钮 */
+.admin-btn-edit {
+  background-color: #4a9e4f;
+  color: #ffffff;
+}
+
+.admin-btn-edit:hover {
+  background-color: #3d8a41;
+}
+
+/* 删除按钮 */
+.admin-btn-delete {
+  background-color: #e53935;
+  color: #ffffff;
+}
+
+.admin-btn-delete:hover {
+  background-color: #c62828;
+}
+
+/* 切换按钮 */
+.admin-btn-toggle {
+  background-color: #ffffff;
+  color: #333333;
+  border: 1px solid #d0d0d0;
+}
+
+.admin-btn-toggle:hover {
+  background-color: #f5f5f5;
+  border-color: #b0b0b0;
+}
+
+/* 移动顺序按钮 */
+.admin-btn-move {
+  background-color: #ffffff;
+  color: #1976d2;
+  border: 1px solid #90caf9;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1;
+  min-width: 32px;
+}
+
+.admin-btn-move:hover:not(:disabled) {
+  background-color: #e3f2fd;
+  border-color: #1976d2;
+}
+
+.admin-btn-move:disabled {
+  color: #bdbdbd;
+  border-color: #e0e0e0;
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.7;
+}
+
+/* 添加子项按钮 */
+.admin-btn-add-child {
+  background-color: #f5f5f5;
+  color: #333333;
+  border: 1px dashed #c0c0c0;
+  width: 100%;
+}
+
+.admin-btn-add-child:hover {
+  background-color: #eeeeee;
+  border-color: #a0a0a0;
+}
+
+/* 添加新分类按钮 */
+.admin-btn-add-category {
+  background-color: #4a9e4f;
+  color: #ffffff;
+  padding: 12px 32px;
+  font-size: 15px;
+}
+
+.admin-btn-add-category:hover {
+  background-color: #3d8a41;
+}
+
+/* 重置为默认按钮 */
+.admin-reset-btn {
+  background-color: #ff9800;
+  color: #ffffff;
+}
+
+.admin-reset-btn:hover {
+  background-color: #f57c00;
+}
+
+/* 退出登录按钮 */
+.admin-logout-btn {
+  background-color: #f5f5f5;
+  color: #666666;
+  border: 1px solid #d0d0d0;
+}
+
+.admin-logout-btn:hover {
+  background-color: #eeeeee;
+  border-color: #b0b0b0;
+}
+
+/* 小尺寸按钮 */
+.admin-btn-small {
+  padding: 5px 10px;
+  font-size: 12px;
+  border-radius: 6px;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+  .admin-container {
+    padding: 16px;
+  }
+
+  .admin-header {
+    /* 保持 row + wrap，避免窄屏下 header 占用过高把 content 压没 */
+    align-items: center;
+  }
+
+  .admin-header h1 {
+    font-size: 20px;
+  }
+
+  .category-header {
+    align-items: center;
+  }
+
+  .category-actions {
+    justify-content: flex-end;
+  }
+
+  .child-item {
+    align-items: center;
+  }
+
+  .child-info {
+    gap: 6px;
+  }
+
+  .child-url {
+    max-width: 100%;
+  }
+
+  .child-actions {
+    justify-content: flex-end;
+  }
+
+  .admin-footer {
+    padding-top: 10px;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .admin-page {
+    padding: 12px 8px;
+  }
+
+  .admin-container {
+    border-radius: 8px;
+    padding: 12px;
+  }
+
+  .admin-header h1 {
+    font-size: 18px;
+  }
+
+  .category-title {
+    font-size: 14px;
+  }
+
+  .admin-btn {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  .admin-btn-small {
+    padding: 4px 8px;
+    font-size: 12px;
+  }
+}

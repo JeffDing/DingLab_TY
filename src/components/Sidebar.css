@@ -1,0 +1,285 @@
+/**
+ * 左侧导航 Sidebar 样式
+ * 配合 Header 和 ContentArea 使用
+ */
+
+/* 侧边栏容器：宽度固定 200px，高度填满剩余空间 */
+.sidebar {
+  width: 200px;
+  height: 100%;
+  background-color: #CCE8CF;
+  overflow-y: auto;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  flex-shrink: 0;
+  border-right: 1px solid #b8d8bb;
+  transition: width 0.3s ease;
+}
+
+/* 折叠状态 */
+.sidebar.collapsed {
+  width: 40px;
+}
+
+.sidebar.collapsed .nav-list,
+.sidebar.collapsed .sidebar-toggle {
+  display: none;
+}
+
+.sidebar.collapsed .sidebar-toggle {
+  display: block;
+  width: 100%;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+  border-bottom: 1px solid #b8d8bb;
+}
+
+/* 折叠/展开按钮 */
+.sidebar-toggle {
+  display: none;
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  cursor: pointer;
+  font-size: 12px;
+  color: #000;
+  background-color: #CCE8CF;
+  border-bottom: 1px solid #b8d8bb;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+}
+
+.sidebar-toggle:hover {
+  background-color: #b8d8bb;
+}
+
+/* 展开状态显示按钮 */
+.sidebar:not(.collapsed) .sidebar-toggle {
+  display: block;
+}
+
+/* 导航列表 */
+.nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* ========== 分类标题 ========== */
+.nav-category-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 12px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #000000;
+  background-color: #CCE8CF;
+  border-bottom: 1px solid #ffffff;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-category-title:hover {
+  background-color: #b8d8bb;
+}
+
+/* 展开状态：灰色背景 + 白色加粗文字 */
+.nav-category-title.expanded {
+  background-color: #888888;
+  color: #ffffff;
+  font-weight: bold;
+  border-bottom-color: #888888;
+}
+
+.nav-category-title.expanded:hover {
+  background-color: #777777;
+}
+
+/* 箭头指示器 */
+.nav-category-arrow {
+  font-size: 10px;
+  line-height: 25px;
+  transition: transform 0.2s ease;
+  color: #000000;
+}
+
+.nav-category-title.expanded .nav-category-arrow {
+  transform: rotate(90deg);
+  color: #ffffff;
+}
+
+.nav-category-name {
+  flex: 1;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+/* ========== 子项列表 ========== */
+.nav-children {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  background-color: #CCE8CF;
+}
+
+.nav-child {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-child-link {
+  display: block;
+  padding: 0 12px 0 24px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #336699;
+  background-color: #dddddd;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-child-link:hover {
+  background-color: #cccccc;
+  color: #1a4d80;
+}
+
+.nav-child-link:active {
+  background-color: #bbbbbb;
+}
+
+/* ========== 独立链接项 ========== */
+.nav-link-item {
+  margin: 0;
+  padding: 0;
+}
+
+.nav-link {
+  display: block;
+  padding: 0 12px;
+  height: 25px;
+  line-height: 25px;
+  font-size: 12px;
+  color: #336699;
+  background-color: #dddddd;
+  border-bottom: 1px solid #ffffff;
+  text-decoration: none;
+  cursor: pointer;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #cccccc;
+  color: #1a4d80;
+}
+
+.nav-link:active {
+  background-color: #bbbbbb;
+}
+
+/* ========== 滚动条美化 ========== */
+.sidebar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+.sidebar::-webkit-scrollbar-track {
+  background: #CCE8CF;
+}
+
+.sidebar::-webkit-scrollbar-thumb {
+  background: #a8c8ab;
+  border-radius: 3px;
+}
+
+.sidebar::-webkit-scrollbar-thumb:hover {
+  background: #8ab88d;
+}
+
+/* ========== 响应式：移动端适配 ========== */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 160px;
+  }
+
+  .nav-category-title {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+
+  .nav-child-link {
+    padding: 0 8px 0 16px;
+    font-size: 11px;
+  }
+
+  .nav-link {
+    padding: 0 8px;
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sidebar {
+    width: 140px;
+  }
+
+  .nav-category-title {
+    padding: 0 6px;
+    font-size: 10px;
+    height: 22px;
+    line-height: 22px;
+  }
+
+  .nav-child-link {
+    padding: 0 6px 0 12px;
+    font-size: 10px;
+    height: 22px;
+    line-height: 22px;
+  }
+
+  .nav-link {
+    padding: 0 6px;
+    font-size: 10px;
+    height: 22px;
+    line-height: 22px;
+  }
+
+  .nav-category-arrow {
+    font-size: 9px;
+    line-height: 22px;
+  }
+}
+
+/* 极小屏幕可隐藏侧边栏 */
+@media (max-width: 360px) {
+  .sidebar {
+    display: none;
+  }
+}
