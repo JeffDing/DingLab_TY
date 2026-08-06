@@ -1,0 +1,362 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+
+<head>
+    <title>DingLab气象研究中心综合信息服务平台</title>
+    <style type="text/css">
+        <!--
+        body {
+            background-color: #CCE8CF;
+        }
+
+        a:link {
+            text-decoration: none;
+        }
+
+        a:visited {
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: none;
+        }
+
+        a:active {
+            text-decoration: none;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            font-size: 12px
+        }
+
+        #nav {
+            margin: 0px;
+            text-align: center;
+            line-height: 25px;
+            width: 100%;
+        }
+
+        .title {
+            color: #000000;
+            border-bottom: 1px solid #fff;
+            cursor: pointer;
+            background-color: #CCE8CF;
+        }
+
+        .title1 {
+            background: #888;
+            font-weight: bold;
+            color: #fff;
+            border-bottom: 1px solid #666;
+            cursor: pointer;
+        }
+
+        .content li {
+            color: #336699;
+            background: #ddd;
+            border-bottom: 1px solid #fff;
+        }
+        -->
+    </style>
+    <meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+
+<body leftmargin=0 topmargin=0 oncontextmenu='return false' ondragstart='return false' onselectstart='return false'
+    onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false'
+    onmouseup='document.selection.empty()'>
+    </head>
+
+    <body>
+        <div id="nav">
+            <div class="title" id="menu1" onclick="showmenu('1') "><a target="main" href="gx.html">站点首页</a></div>
+
+            <div class="title" id="menu2" onclick="showmenu('2')">路径报文</div>
+            <div id="list2" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/probability-img1.html">NMC路径预报①</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/probability-img2.html">NMC路径预报②</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/probability-img3.html">NMC路径预报③</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/warning.html">NMC台风公报</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/typhoon_new.html">NMC台风快讯</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/warning_index.html">NMC台风预警</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/typhoon-name/index.html">NMC台风命名</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/typhoon/totalcyclone.htm">NMC全球热带气旋监测</a></li>
+                    <li><a target="_blank" href="https://www.ospo.noaa.gov/products/ocean/tropical/tcfp/">未来扰动监测网站</a></li>
+                    <li><a target="main" href="./ljbw/raodong.html">未来扰动监测</a></li>
+                    <li><a target="_blank" href="http://typhoon.nmc.cn/">中央气象台台风网</a></li>
+                    <li><a target="_blank" href="http://www.typhoon2000.ph/multi/">台风2000网</a></li>
+                    <li><a target="_blank" href="http://www.wztf121.com/">温州台风网</a></li>
+                    <li><a target="_blank" href="https://typhoon.slt.zj.gov.cn/">浙江水利</a></li>
+                    <li><a target="_blank" href="https://www.jma.go.jp/bosai/map.html#contents=typhoon&elem=typhoon_all">JMA台风情报</a></li>
+                    <li><a target="main" href="./qtxg/tfkx.php">台风快讯</a></li>
+                    <li><a target="main" href="./qtxg/cma.php">CMA报文</a></li>
+                    <li><a target="main" href="./qtxg/jmabw.php">JMA报文</a></li>
+                    <li><a target="main" href="./qtxg/jma.php">JMA路径</a></li>
+                    <li><a target="main" href="./qtxg/hko.php">HKO路径</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu3" onclick="showmenu('3')">卫星云图</div>
+            <div id="list3" class="content" style="display:none">
+                <ul>
+                    <li><a target="main" href="./wxyt/yt.html">CIMSS卫星云图</a></li>
+                    <li><a target="main" href="./wxyt/shuzi.html">数字台风网云图</a></li>
+                    <li><a target="main" href="./wxyt/nmc.html">NMC卫星云图</a></li>
+                    <li><a target="main" href="https://www.ospo.noaa.gov/products/imagery/himawari.html">NOAA卫星云图</a></li>
+                    <li><a target="main" href="./wxyt/himawari.html">Himawari</a></li>
+                    <li><a target="_blank" href="http://www.dapiya.net:1234/zh/satellite/floater/">Dapiya</a></li>
+                    <li><a target="_blank" href="http://re.ssec.wisc.edu/">RealEarth(TM)</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu4" onclick="showmenu('4')">数值预报</div>
+            <div id="list4" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://www.ecmwf.int/en/forecasts/charts">EC集合</a></li>
+                    <li><a target="_blank" href="https://www.easterlywave.com/typhoon/ensemble/">EC集合(带登陆预测）</a></li>
+                    <li><a target="_blank" href="http://moe.met.fsu.edu/cyclonephase/gfs/fcst/">GFS模式</a></li>
+                    <li><a target="_blank" href="http://www.emc.ncep.noaa.gov/gc_wmb/vxt/HWRF/index.php">HWRF模式</a></li>
+                    <li><a target="_blank" href="http://www.emc.ncep.noaa.gov/gmb/tpm/emchurr/tcgen/">NCEP气旋路径</a></li>
+                    <li><a target="_blank" href="https://www.tropicaltidbits.com/analysis/models/">Tropical Tidbits</a></li>
+                    <li><a target="_blank" href="https://www.weathernerds.org/">Weathernerds</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu5" onclick="showmenu('5')">海洋资讯</div>
+            <div id="list5" class="content" style="display:none">
+                <ul>
+                    <li><a target="main" href="./haiyang/hyxg.html">海洋相关</a></li>
+                    <li><a target="_blank" href="http://tropic.ssec.wisc.edu/real-time/windmain.php?basin=westpac&prod=wvir&sat=wgms&time&zoom=">西太风场扫描</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu6" onclick="showmenu('6')">天气图分析</div>
+            <div id="list6" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/observations/china/dm/weatherchart-h000.htm">CMA天气图</a></li>
+                    <li><a target="_blank" href="http://www.jma.go.jp/jp/g3/">JMA天气图</a></li>
+                    <li><a target="_blank" href="http://weather.uwyo.edu/upperair/seasia.html">全球探空资料查询</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu7" onclick="showmenu('7')">CIMSS分析</div>
+            <div id="list7" class="content" style="display:none">
+                <ul>
+                    <li><a target="main" href="./fenxi/xbtpy.html">西北太平洋</a></li>
+                    <li><a target="main" href="./fenxi/dbtpy.html">东北太平洋</a></li>
+                    <li><a target="main" href="./fenxi/xbdxy.html">西北大西洋</a></li>
+                    <li><a target="main" href="./fenxi/ddxy.html">东大西洋</a></li>
+                    <li><a target="main" href="./fenxi/ydy.html">印度洋</a></li>
+                    <li><a target="main" href="http://tropic.ssec.wisc.edu/real-time/mimtc/tc.shtml">MIMIC</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu8" onclick="showmenu('8')">CIMSS驶流</div>
+            <div id="list8" class="content" style="display:none">
+                <ul>
+                    <li><a target="main" href="./shiliu/xbtpy.html">西北太平洋</a></li>
+                    <li><a target="main" href="./shiliu/dbtpy.html">东北太平洋</a></li>
+                    <li><a target="main" href="./shiliu/xbdxy.html">西北大西洋</a></li>
+                    <li><a target="main" href="./shiliu/ddxy.html">东大西洋</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu9" onclick="showmenu('9')">雷达专区</div>
+            <div id="list9" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/radar/chinaall.html">CMA雷达饼图</a></li>
+                    <li><a target="_blank" href="http://www.nmc.cn/publish/radar/shang-hai/qing-pu.htm">CMA单站雷达</a></li>
+                    <li><a target="_blank" href="https://caiyunapp.com/map/">彩云天气</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu10" onclick="showmenu('10')">气旋监测</div>
+            <div id="list10" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://tropic.ssec.wisc.edu/real-time/adt/adt.html">ADT(8.2.1)</a></li>
+                    <li><a target="_blank" href="http://www.cpc.ncep.noaa.gov/products/precip/CWlink/MJO/CLIVAR/clivar_wh.shtml">MJO预报</a></li>
+                    <li><a target="_blank" href="http://www.ssd.noaa.gov/PS/TROP/adt.html">NOAA-ADT</a></li>
+                    <li><a target="_blank" href="http://www.ssd.noaa.gov/PS/TROP/floaters.html">NOAA台风特写</a></li>
+                    <li><a target="_blank" href="https://www.nrlmry.navy.mil/tcweb/active/">NRL</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu11" onclick="showmenu('11')">海洋流场</div>
+            <div id="list11" class="content" style="display:none">
+                <ul>
+                    <li><a target="main" href="./hylc/air.html">Air</a></li>
+                    <li><a target="main" href="./hylc/ocean.html">Ocan</a></li>
+                    <li><a target="_blank" href="https://www.nnvl.noaa.gov/weatherview/index.html">WeatherView</a></li>
+                    <li><a target="_blank" href="https://cwcgom.aoml.noaa.gov/cgom/OceanViewer/">OceanViewer</a></li>
+                    <li><a target="_blank" href="https://www.windyty.com">Windyty</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu12" onclick="showmenu('12')">温带气旋</div>
+            <div id="list12" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://www.bom.gov.au/australia/charts/">BOM</a></li>
+                    <li><a target="_blank" href="http://www.metservice.com/maps-radar/maps/tasman-sea-nz">Metservice</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu13" onclick="showmenu('13')">气象平台</div>
+            <div id="list13" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://charts.ecmwf.int/">ECMWF-Charts</a></li>
+                    <li><a target="_blank" href="https://www.weatheronline.co.uk/">WeahterOnline</a></li>
+                    <li><a target="_blank" href="https://www.wetteronline.de/">WetterOnline</a></li>
+                    <li><a target="_blank" href="http://www.wunderground.com/">地下天气网</a></li>
+                    <li><a target="_blank" href="http://weather.uwyo.edu/">Wyoming</a></li>
+                    <li><a target="_blank" href="http://www.ndbc.noaa.gov/ship_obs.php?uom=M;time=7">船舶实测平台</a></li>
+                    <li><a target="_blank" href="https://meteologix.com/">Meteologix</a></li>
+                    <li><a target="_blank" href="https://www.weather-models.info/">Weather-Model</a></li>
+                    <li><a target="_blank" href="https://rammb-data.cira.colostate.edu/tc_realtime/">CIRA-RAMMB</a></li>
+                    <li><a target="_blank" href="https://www.easterlywave.com/">Easterlywave</a></li>
+                    <li><a target="_blank" href="https://www.jma.go.jp/bosai/">JMA</a></li>
+                    <li><a target="_blank" href="https://www.metoc.navy.mil/jtwc/jtwc.html?tropical">JTWC</a></li>
+                    <li><a target="_blank" href="https://www.tcfa.top/">TCFA</a></li>
+                    <li><a target="_blank" href="https://fengwuai.com/">相风气象(风乌)</a></li>
+                    <li><a target="_blank" href="http://smartyphoon.ap-tcrc.org">智台智能体</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu14" onclick="showmenu('14')">WMO</div>
+            <div id="list14" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://worldweather.wmo.int/en/home.html">WMC-WWIS</a></li>
+                    <li><a target="_blank" href="http://www.wmc-bj.net/">WMC-BJ</a></li>
+                    <li><a target="_blank" href="https://dust.aemet.es/">WMO-AEMET</a></li>
+                    <li><a target="_blank" href="https://sds-was.cimh.edu.bb/">SDS-WAS</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu15" onclick="showmenu('15')">中央气象台</div>
+            <div id="list15" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://www.nmc.cn/">中央气象台</a></li>
+                    <li><a target="_blank" href="http://avimet.nmc.cn/">中央气象台航空预报</a></li>
+                    <li><a target="_blank" href="http://www.asdf-bj.net/">中央气象台沙尘预报</a></li>
+                    <li><a target="_blank" href="http://aimfdp.nmc.cn/">中央气象台人工智能预报大模型平台</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu16" onclick="showmenu('16')">健茂天气</div>
+            <div id="list16" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://jm.typhoon.vip/">主页</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/fnv3/?from=map">FNV3</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/genc/?from=map">GENC</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/ecmwf/?from=map">EC</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/aifs/?from=map">AIFS</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/gfs/?from=map">GEFS</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/aigfs/?from=map">AIGEFS</a></li>
+                    <li><a target="main" href="https://jm.typhoon.vip/typhoon-model/img/?from=map">模式集合</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu17" onclick="showmenu('17')">上海气象</div>
+            <div id="list17" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="http://sh.cma.gov.cn/">上海气象局</a></li>
+                    <li><a target="_blank" href="http://sh.weather.com.cn/">上海天气</a></li>
+                    <li><a target="_blank" href="http://sh.weather.com.cn/zhyj/index.shtml">上海天气预警</a></li>
+                    <li><a target="_blank" href="http://wx.soweather.com/wxapp/qxsk.jsp">上海天气平台(公众号版)</a></li>
+                    <li><a target="_blank" href="http://wx.soweather.com/wxapp/warn.jsp">上海天气预警(公众号版)</a></li>
+                    <li><a target="_blank" href="http://sh.weather.com.cn/forecast.shtml">上海天气预报</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu18" onclick="showmenu('18')">港澳台气象</div>
+            <div id="list18" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://www.hko.gov.hk/sc/index.html">香港天文台</a></li>
+                    <li><a target="_blank" href="https://www.smg.gov.mo/zh">澳门地球物理气象局</a></li>
+                    <li><a target="_blank" href="https://www.cwa.gov.tw/V8/C/">交通部中央气象局</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu19" onclick="showmenu('19')">美国气象</div>
+            <div id="list19" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://www.noaa.gov/">NOAA</a></li>
+                    <li><a target="_blank" href="https://www.weather.gov/">NWS</a></li>
+                    <li><a target="_blank" href="https://www.weather.gov/prh/">PRH</a></li>
+                    <li><a target="_blank" href="https://www.emc.ncep.noaa.gov/emc.php">EMC</a></li>
+                    <li><a target="_blank" href="https://oceanservice.noaa.gov/">NOS</a></li>
+                    <li><a target="_blank" href="https://www.nesdis.noaa.gov/">NESDIS</a></li>
+                    <li><a target="_blank" href="https://www.nmfs.noaa.gov/">NMFS</a></li>
+                    <li><a target="_blank" href="https://www.oar.noaa.gov/">OAR</a></li>
+                    <li><a target="_blank" href="https://www.ncdc.noaa.gov/">NCDC</a></li>
+                    <li><a target="_blank" href="https://www.esrl.noaa.gov/">ESRL</a></li>
+                    <li><a target="_blank" href="https://www.ssd.noaa.gov/">SSD</a></li>
+                    <li><a target="_blank" href="https://www.ospo.noaa.gov/">OSPO</a></li>
+                    <li><a target="_blank" href="https://www.nhc.noaa.gov/">NHC</a></li>
+                    <li><a target="_blank" href="https://www.omao.noaa.gov/">OMAO</a></li>
+                    <li><a target="_blank" href="https://sos.noaa.gov/">SOS</a></li>
+                    <li><a target="_blank" href="https://oceanexplorer.noaa.gov/">OE</a></li>
+                    <li><a target="_blank" href="https://www.pmel.noaa.gov/">PMEL</a></li>
+                    <li><a target="_blank" href="https://sanctuaries.noaa.gov/">NMS</a></li>
+                    <li><a target="_blank" href="https://www.ngdc.noaa.gov/">NGDC</a></li>
+                    <li><a target="_blank" href="https://www.aoml.noaa.gov/">AOML</a></li>
+                    <li><a target="_blank" href="https://www2.ucar.edu/">UCAR</a></li>
+                    <li><a target="_blank" href="https://www.ncei.noaa.gov/">NCEI</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu20" onclick="showmenu('20')">世界气象</div>
+            <div id="list20" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://www.ecmwf.int/">ECMWF</a></li>
+                    <li><a target="_blank" href="https://www.jma.go.jp/jma/index.html">JMA</a></li>
+                    <li><a target="_blank" href="http://www.kma.go.kr/">KMA</a></li>
+                    <li><a target="_blank" href="https://www.pagasa.dost.gov.ph/index.php">PAGASA</a></li>
+                    <li><a target="_blank" href="http://www.bom.gov.au/">Australia BOM</a></li>
+                    <li><a target="_blank" href="https://weather.gc.ca/">Canada</a></li>
+                    <li><a target="_blank" href="https://www.metoffice.gov.uk/">Met Office</a></li>
+                    <li><a target="_blank" href="https://www.dwd.de/DE/Home/home_node.html">DWD</a></li>
+                    <li><a target="_blank" href="https://meteofrance.com/">MeteoFrance</a></li>
+                    <li><a target="_blank" href="https://www.weather.gov.sg/home/">Singapore</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu21" onclick="showmenu('21')">台风年鉴</div>
+            <div id="list21" class="content" style="display:none">
+                <ul>
+                    <li><a target="_blank" href="https://www.ncei.noaa.gov/products/international-best-track-archive">IBTrACS</a></li>
+                    <li><a target="_blank" href="https://www.metoc.navy.mil/jtwc/jtwc.html?best-tracks">JTWC BST</a></li>
+                    <li><a target="_blank" href="https://www.metoc.navy.mil/jtwc/jtwc.html?cyclone">JTWC年鉴</a></li>
+                    <li><a target="_blank" href="https://www.pagasa.dost.gov.ph/tropical-cyclone/publications/annual-report">PAGASA年鉴</a></li>
+                    <li><a target="_blank" href="https://www.jma.go.jp/jma/jma-eng/jma-center/rsmc-hp-pub-eg/annualreport.html">JMA年鉴</a></li>
+                </ul>
+            </div>
+
+            <div class="title" id="menu22" onclick="showmenu('22')">版本切换</div>
+            <div id="list22" class="content" style="display:none">
+                <ul>
+                    <li><a target="_top" href="./wap.html">手机版</a></li>
+                    <li><a target="_top" href="./pc.html">电脑版</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <script language=JavaScript>
+            function showmenu(id) {
+                var list = document.getElementById("list" + id);
+                var menu = document.getElementById("menu" + id)
+                if (list.style.display == "none") {
+                    document.getElementById("list" + id).style.display = "block";
+                    menu.className = "title1";
+                } else {
+                    document.getElementById("list" + id).style.display = "none";
+                    menu.className = "title";
+                }
+            }
+        </script>
+    </body>
+
+</html>

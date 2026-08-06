@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<style type="text/css">
+.logo-center {
+	text-align: center;
+}
+body {
+	margin-left: 0px;
+	margin-right: 0px;
+	margin-top: 0px;
+	margin-bottom: 0px;
+}
+.text-top {
+	text-align: center;
+	font-size: 12px;
+	font-family: "黑体";
+	font-weight: normal;
+}
+.text-top font {
+	font-size: 36px;
+	font-weight: bold;
+}
+
+.text-time {
+	text-align: right;
+	font-size: 16px;
+	font-family: "黑体";
+    color:red;
+	font-weight: normal;
+}
+.text-time font {
+	font-size: 36px;
+	font-weight: bold;
+}
+</style>
+
+<body bgcolor="#CCE8CF">
+<body leftmargin=0 topmargin=0  oncontextmenu='return false' ondragstart='return false' onselectstart ='return false' onselect='document.selection.empty()' oncopy='document.selection.empty()' onbeforecopy='return false' onmouseup='document.selection.empty()'>  
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<table width="100%" border="0" height="80">
+  <tr>
+    <td width="1030" rowspan="3" class="text-top"><font color="#00582a" size="+4">DingLab气象研究中心综合信息服务平台</font></td>
+    <td width="250" height="25" class="text-time" id="timetable">&nbsp;</td>
+  </tr>
+</table>
+<script language="javascript">
+  function get_time()
+  {
+    var date=new Date();
+    var year="",month="",day="",week="",hour="",minute="",second="",utcyear="",utcmonth="",utcday="",utcweek="",utchour="",utcminute="",utcsecond="";
+    year=date.getFullYear();
+    month=add_zero(date.getMonth()+1);
+    day=add_zero(date.getDate());
+    week=date.getDay();
+    switch (date.getDay()) {
+    case 0:val="星期天";break
+    case 1:val="星期一";break
+    case 2:val="星期二";break
+    case 3:val="星期三";break
+    case 4:val="星期四";break
+    case 5:val="星期五";break
+    case 6:val="星期六";break
+    }
+    utcyear=date.getUTCFullYear();
+    utcmonth=add_zero(date.getUTCMonth()+1);
+    utcday=add_zero(date.getUTCDate());
+    utcweek=date.getUTCDay();
+    switch (date.getUTCDay()) {
+    case 0:utcval="星期天";break
+    case 1:utcval="星期一";break
+    case 2:utcval="星期二";break
+    case 3:utcval="星期三";break
+    case 4:utcval="星期四";break
+    case 5:utcval="星期五";break
+    case 6:utcval="星期六";break
+    }
+    hour=add_zero(date.getHours());
+    minute=add_zero(date.getMinutes());
+    second=add_zero(date.getSeconds());
+    utchour=add_zero(date.getUTCHours());
+    utcminute=add_zero(date.getUTCMinutes());
+    utcsecond=add_zero(date.getUTCSeconds());
+    timetable.innerText="UTC时间： "+utcyear+"年"+utcmonth+"月"+utcday+"日   "+utchour+":"+utcminute+":"+utcsecond+"\n"+"本地时间： "+year+"年"+month+"月"+day+"日   "+hour+":"+minute+":"+second;
+  }
+
+  function add_zero(temp)
+  {
+    if(temp<10) return "0"+temp;
+    else return temp;
+  }
+setInterval("get_time()",1000);
+</script>
