@@ -240,7 +240,7 @@
         "id": "menu4-2",
         "name": "EC集合(带登陆预测）",
         "type": "link",
-        "url": "https://next.easterlywave.com/",
+        "url": "https://www.easterlywave.com/typhoon/ensemble/",
         "target": "_blank",
         "parentId": "menu4",
         "order": 2
@@ -757,15 +757,6 @@
         "target": "_blank",
         "parentId": "menu13",
         "order": 14
-      },
-      {
-        "id": "menu13-15",
-        "name": "智台智能体",
-        "type": "link",
-        "url": "http://smartyphoon.ap-tcrc.org",
-        "target": "_blank",
-        "parentId": "menu13",
-        "order": 15
       },
       {
         "name": "华南气象爱好者",
