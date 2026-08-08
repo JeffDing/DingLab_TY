@@ -3,7 +3,6 @@
  * 配置路由和页面导航
  */
 
-import { useState } from 'react'
 import { HashRouter, Routes, Route, Navigate } from 'react-router-dom'
 
 import Header from './components/Header'
@@ -34,8 +33,6 @@ function AdminRoute({ children }: { children: React.ReactNode }) {
  * 主布局组件：Header + Sidebar + ContentArea
  */
 function MainLayout() {
-  const [sidebarCollapsed, setSidebarCollapsed] = useState(false)
-
   const handleNavigate = (url: string, target: '_self' | '_blank' | 'main') => {
     if (target === '_blank') {
       window.open(url, '_blank', 'noopener,noreferrer')
@@ -54,9 +51,6 @@ function MainLayout() {
       <div className="main-body">
         <Sidebar
           onNavigate={handleNavigate}
-
-          onToggleSidebar={() => setSidebarCollapsed(!sidebarCollapsed)}
-          isCollapsed={sidebarCollapsed}
         />
         <div className="content-wrapper">
           <ContentArea src="gx.html" />

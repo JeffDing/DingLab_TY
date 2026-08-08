@@ -11,11 +11,9 @@ import './Sidebar.css'
 interface SidebarProps {
   onNavigate: (url: string, target: '_self' | '_blank' | 'main') => void
   navData?: NavItem[]
-  onToggleSidebar?: () => void
-  isCollapsed?: boolean
 }
 
-function Sidebar({ onNavigate, navData: propNavData, onToggleSidebar, isCollapsed }: SidebarProps) {
+function Sidebar({ onNavigate, navData: propNavData }: SidebarProps) {
   const [navItems, setNavItems] = useState<NavItem[]>([])
   const [expandedIds, setExpandedIds] = useState<Set<string>>(new Set())
   const hasPropNavData = !!propNavData
@@ -162,12 +160,7 @@ function Sidebar({ onNavigate, navData: propNavData, onToggleSidebar, isCollapse
   const sortedItems = [...navItems].sort((a, b) => a.order - b.order)
 
   return (
-    <nav className={`sidebar ${isCollapsed ? 'collapsed' : ''}`} aria-label="侧边导航">
-      {onToggleSidebar && (
-        <div className="sidebar-toggle" onClick={onToggleSidebar} role="button" tabIndex={0}>
-          {isCollapsed ? '◀' : '▶'}
-        </div>
-      )}
+    <nav className="sidebar" aria-label="侧边导航">
       <ul className="nav-list">
         {sortedItems.map((item) => {
           if (item.type === 'category') {

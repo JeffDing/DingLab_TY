@@ -16,55 +16,6 @@
   -ms-user-select: none;
   flex-shrink: 0;
   border-right: 1px solid #b8d8bb;
-  transition: width 0.3s ease;
-}
-
-/* 折叠状态 */
-.sidebar.collapsed {
-  width: 40px;
-}
-
-.sidebar.collapsed .nav-list,
-.sidebar.collapsed .sidebar-toggle {
-  display: none;
-}
-
-.sidebar.collapsed .sidebar-toggle {
-  display: block;
-  width: 100%;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 12px;
-  color: #000;
-  border-bottom: 1px solid #b8d8bb;
-}
-
-/* 折叠/展开按钮 */
-.sidebar-toggle {
-  display: none;
-  height: 30px;
-  line-height: 30px;
-  text-align: center;
-  cursor: pointer;
-  font-size: 12px;
-  color: #000;
-  background-color: #CCE8CF;
-  border-bottom: 1px solid #b8d8bb;
-  user-select: none;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-}
-
-.sidebar-toggle:hover {
-  background-color: #b8d8bb;
-}
-
-/* 展开状态显示按钮 */
-.sidebar:not(.collapsed) .sidebar-toggle {
-  display: block;
 }
 
 /* 导航列表 */
