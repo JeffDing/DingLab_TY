@@ -1000,10 +1000,54 @@
     ]
   },
   {
+    "id": "nav_1786323419154_i5aicbb",
+    "name": "上海防汛",
+    "type": "category",
+    "order": 18,
+    "children": [
+      {
+        "name": "防汛防台",
+        "url": "https://swj.sh.gov.cn/swj-fxftzt/index.html",
+        "target": "_blank",
+        "type": "link",
+        "parentId": "nav_1786323419154_i5aicbb",
+        "id": "nav_1786323616641_5ihlg3v",
+        "order": 1
+      },
+      {
+        "name": "实时雨量",
+        "url": "https://bmxx.swj.sh.gov.cn/zwwx/#/yuliangall",
+        "target": "main",
+        "type": "link",
+        "parentId": "nav_1786323419154_i5aicbb",
+        "id": "nav_1786323511938_52dmboi",
+        "order": 2
+      },
+      {
+        "name": "道路积水",
+        "url": "https://bmxx.swj.sh.gov.cn/zwwx/#/jishuiall",
+        "target": "main",
+        "type": "link",
+        "parentId": "nav_1786323419154_i5aicbb",
+        "id": "nav_1786323530106_lqgwnh3",
+        "order": 3
+      },
+      {
+        "name": "风速风向",
+        "url": "https://bmxx.swj.sh.gov.cn/zwwx/#/fengsu",
+        "target": "main",
+        "type": "link",
+        "parentId": "nav_1786323419154_i5aicbb",
+        "id": "nav_1786323553289_abv3mcb",
+        "order": 4
+      }
+    ]
+  },
+  {
     "id": "menu17",
     "name": "港澳台气象",
     "type": "category",
-    "order": 18,
+    "order": 19,
     "children": [
       {
         "id": "menu17-1",
@@ -1038,7 +1082,7 @@
     "id": "menu18",
     "name": "美国气象",
     "type": "category",
-    "order": 19,
+    "order": 20,
     "children": [
       {
         "id": "menu18-1",
@@ -1244,7 +1288,7 @@
     "id": "menu19",
     "name": "世界气象",
     "type": "category",
-    "order": 20,
+    "order": 21,
     "children": [
       {
         "id": "menu19-1",
@@ -1342,7 +1386,7 @@
     "id": "menu20",
     "name": "台风年鉴",
     "type": "category",
-    "order": 21,
+    "order": 22,
     "children": [
       {
         "id": "menu20-1",
@@ -1395,7 +1439,7 @@
     "id": "menu21",
     "name": "版本切换",
     "type": "category",
-    "order": 22,
+    "order": 23,
     "children": [
       {
         "id": "menu21-1",

@@ -25,3 +25,6 @@ Thumbs.db
 # Project temp
 .arts/
 .codeartsdoer/
+
+# Backup files
+*.bak
